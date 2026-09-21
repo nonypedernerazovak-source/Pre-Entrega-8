@@ -1,0 +1,19 @@
+📚 Librería LunaBelle - Pre-Entrega 08
+## Objetivo del proyecto
+La aplicación simula una pequeña librería online donde el usuario puede:
+* 📖 Visualizar un catálogo de libros.
+* 🛒 Agregar libros al carrito.
+* ➕ Aumentar la cantidad de libros.
+* ➖ Disminuir la cantidad de libros.
+* 🗑️ Eliminar libros del carrito.
+* 🧹 Vaciar completamente el carrito.
+* 💾 Mantener los datos guardados aunque se recargue la página.
+
+## 📚 Libros disponibles
+| Libro                              | Autor           | Género   |
+| ---------------------------------- | --------------- | -------- |
+| Harry Potter y la piedra filosofal | J.K. Rowling    | Fantasía |
+| Bridgerton: El vizconde que me amó | Julia Quinn     | Romance  |
+| Saga Off Campus                    | Elle Kennedy    | Romance  |
+| Crepúsculo                         | Stephenie Meyer | Fantasía |
+| Las crónicas de Narnia             | C.S. Lewis      | Fantasía |
