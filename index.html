@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Librería LunaBelle - Pre-Entrega 08</title>
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Librería LunaBelle</h1>
+    <p>Pre-Entrega 08 - Sincronización de estado entre DOM y Storage</p>
+</header>
+
+<main>
+
+    <section class="catalogo">
+
+        <h2>📖 Catálogo de libros</h2>
+
+        <div id="listaLibros" class="lista-libros"></div>
+
+    </section>
+
+    <section class="carrito">
+
+        <h2>🛒 Mi carrito</h2>
+
+        <div class="resumen-carrito">
+
+            <p>
+                Libros seleccionados:
+                <strong id="contadorCarrito">0</strong>
+            </p>
+
+            <p>
+                Total:
+                <strong id="totalCarrito">$0</strong>
+            </p>
+
+        </div>
+
+        <div id="listaCarrito" class="lista-carrito"></div>
+
+        <button
+            id="vaciarCarrito"
+            class="btn-vaciar"
+            type="button"
+        >
+            Vaciar carrito
+        </button>
+
+        <p id="mensaje" class="mensaje"></p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Librería LunaBelle</p>
+</footer>
+
+<script src="./js/main.js" defer></script>
+</body>
+
+</html>
