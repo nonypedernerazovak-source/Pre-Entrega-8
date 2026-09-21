@@ -1,0 +1,377 @@
+/* ==========================================
+LUNABELLE - PRE-ENTREGA 08
+========================================== */
+
+/* ==========================================
+CONFIGURACIÓN GENERAL
+========================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(
+135deg,
+#f98df5,
+#34ede0
+);
+color: #333;
+min-height: 100vh;
+}
+
+/* ==========================================
+HEADER
+========================================== */
+
+header {
+text-align: center;
+padding: 30px 20px;
+background: linear-gradient(
+135deg,
+#62daf2,
+#bb5fe2
+);
+color: white;
+box-shadow:
+0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 17px;
+}
+
+/* ==========================================
+MAIN
+========================================== */
+
+main {
+width: 90%;
+max-width: 1200px;
+margin: 30px auto;
+}
+
+/* ==========================================
+SECCIONES
+========================================== */
+
+section {
+background-color: rgba(255, 255, 255, 0.95);
+padding: 25px;
+border-radius: 15px;
+margin-bottom: 30px;
+box-shadow:
+0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+color: #a62fc0;
+margin-bottom: 20px;
+text-align: center;
+}
+
+/* ==========================================
+CATÁLOGO
+========================================== */
+
+.lista-libros {
+display: grid;
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(220px, 1fr)
+);
+gap: 20px;
+}
+
+/* ==========================================
+TARJETAS DE LIBROS
+========================================== */
+
+.libro {
+background: #ffffff;
+border: 2px solid #e8a4ed;
+border-radius: 12px;
+padding: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.libro:hover {
+transform: translateY(-5px);
+box-shadow:
+0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+.libro h3 {
+color: #9c27b0;
+margin-bottom: 10px;
+}
+
+.libro p {
+margin: 7px 0;
+line-height: 1.4;
+}
+
+.precio {
+font-size: 20px;
+font-weight: bold;
+color: #e91e63;
+margin: 15px 0;
+}
+
+.stock {
+font-size: 14px;
+color: #555;
+margin-bottom: 15px;
+}
+
+/* ==========================================
+BOTONES GENERALES
+========================================== */
+
+button {
+border: none;
+border-radius: 8px;
+padding: 10px 16px;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+}
+
+button:hover {
+transform: scale(1.04);
+opacity: 0.9;
+}
+
+button:disabled {
+cursor: not-allowed;
+opacity: 0.5;
+transform: none;
+}
+
+/* ==========================================
+BOTÓN AGREGAR
+========================================== */
+
+.btn-agregar {
+background-color: #9c27b0;
+color: white;
+width: 100%;
+margin-top: auto;
+}
+
+/* ==========================================
+BOTÓN ELIMINAR
+========================================== */
+
+.btn-eliminar {
+background-color: #e91e63;
+color: white;
+flex-shrink: 0;
+}
+
+/* ==========================================
+BOTÓN VACIAR
+========================================== */
+
+.btn-vaciar {
+background-color: #d32f2f;
+color: white;
+margin-top: 15px;
+}
+
+/* ==========================================
+CARRITO
+========================================== */
+
+.resumen-carrito {
+margin-bottom: 20px;
+padding: 15px;
+background-color: #f8e9ff;
+border-radius: 10px;
+text-align: center;
+}
+
+.resumen-carrito p {
+margin: 8px 0;
+font-size: 18px;
+}
+
+#contadorCarrito {
+background-color: #bb5fe2;
+color: white;
+padding: 5px 10px;
+border-radius: 20px;
+font-weight: bold;
+}
+
+#totalCarrito {
+color: #8e24aa;
+}
+
+/* ==========================================
+ELEMENTOS DEL CARRITO
+========================================== */
+
+.lista-carrito {
+width: 100%;
+}
+
+.item-carrito {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+padding: 15px;
+margin-bottom: 10px;
+background-color: #f8e9ff;
+border-left: 5px solid #a62fc0;
+border-radius: 8px;
+
+}
+
+.item-info {
+flex: 1;
+}
+
+.item-info h3 {
+color: #8e24aa;
+margin-bottom: 5px;
+}
+
+.item-info p {
+margin: 3px 0;
+}
+
+/* ==========================================
+CONTROL DE CANTIDAD
+========================================== */
+
+.control-cantidad {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 8px;
+margin-top: 10px;
+}
+
+.control-cantidad span {
+font-weight: bold;
+}
+
+.btn-cantidad {
+width: 32px;
+height: 32px;
+padding: 0;
+border-radius: 6px;
+background-color: #bb5fe2;
+color: white;
+font-size: 14px;
+}
+
+.btn-cantidad:hover {
+background-color: #a62fc0;
+}
+
+.cantidad {
+min-width: 25px;
+text-align: center;
+font-size: 17px;
+}
+
+/* ==========================================
+CARRITO VACÍO
+========================================== */
+
+.carrito-vacio {
+text-align: center;
+color: #777;
+padding: 20px;
+}
+
+/* ==========================================
+MENSAJES
+========================================== */
+
+.mensaje {
+text-align: center;
+min-height: 25px;
+margin: 15px 0;
+font-weight: bold;
+color: #8e24aa;
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+footer {
+text-align: center;
+padding: 25px;
+background-color: #8e24aa;
+color: white;
+margin-top: 30px;
+}
+
+footer p {
+margin: 5px 0;
+}
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+main {
+    width: 95%;
+}
+
+section {
+    padding: 18px;
+}
+
+.item-carrito {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+.control-cantidad {
+    justify-content: center;
+}
+
+.btn-eliminar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.resumen-carrito {
+    text-align: center;
+}
+}
